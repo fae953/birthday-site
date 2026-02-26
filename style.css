@@ -237,7 +237,7 @@ img {
 
 @media(max-width: 600px){
   #birthday-text {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Pacifico";
   color: rgb(244, 79, 106);
 }
