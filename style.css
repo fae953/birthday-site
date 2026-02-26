@@ -1,0 +1,247 @@
+body {
+  background-color: rgb(249, 216, 227);
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 30px;
+}
+
+#yes {
+  background-color: rgb(244, 79, 106);
+  border-radius: 30px;
+  border: 1px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#no {
+  background-color: rgb(244, 79, 106);
+  border-radius: 30px;
+  border: 1px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgb(244, 79, 106);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-family: "Comic Sans MS", cursive;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.button-sec {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+  border: 1px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: white;
+}
+
+#birthday-text {
+  font-size: 50px;
+  font-family: "Pacifico";
+  color: rgb(244, 79, 106);
+}
+#paragraph {
+  font-size: 13px;
+  color: rgb(244, 79, 106);
+}
+
+#link-1 {
+  background-color: rgb(244, 79, 106);
+  border-radius: 30px;
+  border: 1px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#link-2 {
+  background-color: rgb(244, 79, 106);
+  border-radius: 30px;
+  border: 1px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.link-3-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#link-3 {
+  background-color: rgb(244, 79, 106);
+  border-radius: 30px;
+  border: 1px;
+  margin-top: 20px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+#main-button:hover {
+  transform: scale(1.1);
+  background-color: #ff6f91; /* slightly brighter pink */
+  transition: 0.3s;
+}
+#emoji-2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+#emoji-1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.memory-title {
+  text-align: center;
+  font-family: "Pacifico";
+  color: rgb(244, 79, 106);
+  margin-top: 40px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.photo {
+  width: 200px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.photo video {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  pointer-events: none;
+  animation: float 2s infinite;
+  object-fit: cover;
+}
+
+.photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(244, 79, 106);
+}
+
+.photo:hover {
+  transform: rotate(0deg) scale(1.1);
+}
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  border-radius: 10px;
+  
+}
+
+#modal-caption {
+  margin-top: 15px;
+  color: rgb(244, 79, 106);
+}
+
+.main-4 {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(244, 79, 106, 0.3);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(244, 79, 106);
+  position: relative;
+}
+
+.main-4 h2 {
+  font-family: "Pacifico", cursive;
+  margin-bottom: 20px;
+}
+
+.main-4 p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.signature {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media(max-width: 600px){
+  #birthday-text {
+  font-size: 30px;
+  font-family: "Pacifico";
+  color: rgb(244, 79, 106);
+}
+.main-4{
+  width: 300px;
+}
+}
